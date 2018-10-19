@@ -21,5 +21,15 @@ namespace ContosoWeb.Controllers
             var departments = departmentService.GetAllDepartments();
             return View(departments);
         }
+
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        public ActionResult Delete()
+        {
+            return View();
+        }
     }
 }

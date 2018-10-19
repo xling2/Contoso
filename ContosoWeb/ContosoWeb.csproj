@@ -200,6 +200,11 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Department\Index.cshtml" />
+    <Content Include="Views\Department\Create.cshtml" />
+    <Content Include="Views\Department\Delete.cshtml" />
+    <Content Include="Views\People\Index.cshtml" />
+    <Content Include="Views\People\Create.cshtml" />
+    <Content Include="Views\People\Update.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -219,6 +224,10 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Contoso.Data\Contoso.Data.csproj">
+      <Project>{3b20b812-25c3-431b-a185-93b9ad14a528}</Project>
+      <Name>Contoso.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Contoso.Model\Contoso.Model.csproj">
       <Project>{ac8f1905-8a4a-4208-9966-a28d9e8a2127}</Project>
       <Name>Contoso.Model</Name>

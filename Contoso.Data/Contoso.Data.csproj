@@ -50,9 +50,9 @@
   <ItemGroup>
     <Compile Include="ContosoDbContext.cs" />
     <Compile Include="IRepository.cs" />
-    <Compile Include="Migrations\201810181414583_InitialDb.cs" />
-    <Compile Include="Migrations\201810181414583_InitialDb.Designer.cs">
-      <DependentUpon>201810181414583_InitialDb.cs</DependentUpon>
+    <Compile Include="Migrations\201810191510045_initialDB.cs" />
+    <Compile Include="Migrations\201810191510045_initialDB.Designer.cs">
+      <DependentUpon>201810191510045_initialDB.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -67,7 +67,9 @@
     <Compile Include="Repository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -77,8 +79,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201810181414583_InitialDb.resx">
-      <DependentUpon>201810181414583_InitialDb.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201810191510045_initialDB.resx">
+      <DependentUpon>201810191510045_initialDB.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

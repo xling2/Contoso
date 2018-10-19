@@ -3,7 +3,7 @@ namespace Contoso.Data.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class InitialDb : DbMigration
+    public partial class initialDB : DbMigration
     {
         public override void Up()
         {

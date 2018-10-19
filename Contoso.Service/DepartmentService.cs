@@ -23,6 +23,19 @@ namespace Contoso.Service
         {
             return _departmentRepository.GetById(Id);
         }
+        public void AddDepartment(Department department, List<string> role)
+        {
+            _departmentRepository.Add(department);
+        }
+        public void UpdateDepartment(Department department, List<string> role)
+        {
+            _departmentRepository.Update(department);
+        }
+
+        public void DeleteDepartment(Department department, List<string> role)
+        {
+            _departmentRepository.Delete(department);
+        }
     }
 
     public interface IDepartmentService
@@ -30,5 +43,11 @@ namespace Contoso.Service
         IEnumerable<Department> GetAllDepartments();
 
         Department GetDepartmentById(int Id);
+
+        void AddDepartment(Department department, List<string> roles);
+
+        void UpdateDepartment(Department department, List<string> roles);
+
+        void DeleteDepartment(Department department, List<string> roles);
     }
 }
