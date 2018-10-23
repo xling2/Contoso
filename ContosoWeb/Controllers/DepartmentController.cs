@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using Contoso.Service;
 using Contoso.Model;
+using Contoso.Model.Models;
 
 namespace ContosoWeb.Controllers
 {
@@ -22,8 +23,9 @@ namespace ContosoWeb.Controllers
             return View(departments);
         }
 
-        public ActionResult Create()
+        public ActionResult Create(Department department)
         {
+            departmentService.AddDepartment(department);
             return View();
         }
 

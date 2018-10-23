@@ -23,16 +23,17 @@ namespace Contoso.Service
         {
             return _departmentRepository.GetById(Id);
         }
-        public void AddDepartment(Department department, List<string> role)
+        public void AddDepartment(Department department)
         {
             _departmentRepository.Add(department);
+            _departmentRepository.SaveChanges();
         }
-        public void UpdateDepartment(Department department, List<string> role)
+        public void UpdateDepartment(Department department)
         {
             _departmentRepository.Update(department);
         }
 
-        public void DeleteDepartment(Department department, List<string> role)
+        public void DeleteDepartment(Department department)
         {
             _departmentRepository.Delete(department);
         }
@@ -44,10 +45,10 @@ namespace Contoso.Service
 
         Department GetDepartmentById(int Id);
 
-        void AddDepartment(Department department, List<string> roles);
+        void AddDepartment(Department department);
 
-        void UpdateDepartment(Department department, List<string> roles);
+        void UpdateDepartment(Department department);
 
-        void DeleteDepartment(Department department, List<string> roles);
+        void DeleteDepartment(Department department);
     }
 }
